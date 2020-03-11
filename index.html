@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link rel = "stylesheet" href = "css/bootstrap.css">-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>ATM</title>
+</head>
+
+<body>
+    <h1>ATM</h1>
+    <div id="pin">
+        <form id="pinStart">
+            <p>LOGIN</p>
+            <p>PIN:</p>
+            <input type="number" id="" class="" placeholder="PIN">
+            <button onclick="pinStart()" class="pinStart">submit</button>
+        </form>
+    </div>
+
+
+    <!--------------------------------------------------------------------------------------------MAIN----->
+    <form id="home" class="home">
+        <p>MAIN MENU</p>
+        <button onclick="deposit()" class="deposit">Deposit</button>
+        <button onclick="withdraw()" class="withdraw">Withdraw</button>
+    </form>
+
+
+    <!--------------------------------------------------------------------------------------------DEPO----->
+    <form id="depositForm" class="depositForm">
+        <p>How much would you like to deposit?</p>
+        <input type="number" name="test" placeholder="enter amount">
+        <input type="button" value="Deposit" onclick="atm(depositForm.test.value)">
+        <br>
+        CURRENT: <span id="test2"></span>
+        <br>
+        NEW: <span id="test"></span>
+    </form>
+    <br>
+
+    <!--------------------------------------------------------------------------------------------DRAW---->
+    <form id="withdrawForm" class="withdrawForm">
+        <p>How much would you like to withdraw?</p>
+        <input type="number" name="draw" placeholder="enter amount">
+        <input type="button" value="Withdraw" onclick="withdrawer(withdrawForm.draw.value)">
+        <br>
+        CURRENT: <span id="withdraw1"></span>
+        <br>
+        NEW: <span id="withdraw2"></span>
+    </form>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
