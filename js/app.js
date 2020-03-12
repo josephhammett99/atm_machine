@@ -1,20 +1,30 @@
 /////////////////////////////////////////////////////////////////////////////////////////////LOG//////
 
 var homeS = document.getElementById('home');
-var pin = document.getElementById("pin")
 var withdrawS = document.getElementById('withdrawForm');
 var depositS = document.getElementById('depositForm');
-
+var pin = document.getElementById("pin");
+var pinN;
 let i;
 
 function pinStart() {
     event.preventDefault();
-    if (pin === 4321 || 1234) {
-        home()
-    } else {
-        console.log('false');
-    }
-};
+    for (let p = 0; p < people.length; p++) {
+        pinN = document.getElementById("pinN").value 
+
+        i = p;
+        console.log(pinN);
+        console.log(people[p].pin);
+        
+        
+        if (Number(pinN) === people[p].pin) {
+            home()
+            return
+        } else {
+            console.log('false');
+        }
+    };
+}
 
 
 function home() {
@@ -27,14 +37,7 @@ function withdraw() {
     event.preventDefault();
     homeS.style.display = 'none';
     withdrawS.style.display = 'block';
-    for (let p = 0; p < people.length; p++) {
-        i = p;
-        if (pin === people[p].pin) {
-            console.log('your balance is 500');
-        }
-        else {
-        }
-    }
+
 };
 
 
@@ -42,14 +45,6 @@ function deposit() {
     event.preventDefault();
     homeS.style.display = 'none';
     depositS.style.display = 'block';
-    for (let p = 0; p < people.length; p++) {
-        i = p;
-        if (pin === people[p].pin) {
-            console.log('your balance is 500');
-        }
-        else {
-        }
-    }
 };
 
 var peopleStart = function (p) {
