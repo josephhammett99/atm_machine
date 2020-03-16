@@ -50,10 +50,10 @@ function deposit() {
 
 
 function homer() {
-    pin.style.display="block";
-    homeSrc.style.display='none';
-    withdrawSrc.style.display='none';
-    depositSrc.style.display='none';
+    pin.style.display = "block";
+    homeSrc.style.display = 'none';
+    withdrawSrc.style.display = 'none';
+    depositSrc.style.display = 'none';
 };
 
 

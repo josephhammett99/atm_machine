@@ -12,6 +12,7 @@ body {
     margin-bottom:30px;
     border:10px solid #888;
 }
+
 #box {
     width:500px;
     text-align:center;
@@ -23,7 +24,8 @@ body {
     border:20px solid #000;
     border-radius:3px;
     background-image: radial-gradient(#005BFF, #5C96FF);
-  }
+}
+
 .welcome {
     color:#FFF700;
 }
