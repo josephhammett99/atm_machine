@@ -10,28 +10,34 @@
 </head>
 
 <body>
-    <h1>ATM</h1>
+    <h1 class="atm-style">ATM</h1>
+    <div id="box">
     <div id="pin">
         <form id="pinStart">
-            <p>LOGIN</p>
+            <div class="welcome">
+            <h2>WELCOME</h2>
             <p>(Use PIN '1234' or '4321')</p>
-            <p>PIN:</p>
-            <input type="number" id="pinN" class="" placeholder="PIN">
+            <p> ENTER CARD PIN:</p>
+            </div>
+            <input type="number" id="pinNumb" class="" placeholder="PIN">
             <button onclick="pinStart()" class="pinStart">submit</button>
         </form>
     </div>
 
 
     <!--------------------------------------------------------------------------------------------MAIN----->
-    <form id="home" class="home">
+    <form id="home" class="home welcome">
         <p>MAIN MENU</p>
         <button onclick="deposit()" class="deposit">Deposit</button>
         <button onclick="withdraw()" class="withdraw">Withdraw</button>
+        <button onclick="homer()">Home</button>
     </form>
 
 
     <!--------------------------------------------------------------------------------------------DEPO----->
     <form id="depositForm" class="depositForm">
+        <button onclick="homer()">Home</button>
+        <div class="welcome">
         <p>How much would you like to deposit?</p>
         <input type="number" name="test" placeholder="enter amount">
         <input type="button" value="Deposit" onclick="atm(depositForm.test.value)">
@@ -39,11 +45,14 @@
         CURRENT: <span id="test2"></span>
         <br>
         NEW: <span id="test"></span>
+        </div>
     </form>
     <br>
 
     <!--------------------------------------------------------------------------------------------DRAW---->
     <form id="withdrawForm" class="withdrawForm">
+        <button onclick="homer()">Home</button>
+        <div class="welcome">
         <p>How much would you like to withdraw?</p>
         <input type="number" name="draw" placeholder="enter amount">
         <input type="button" value="Withdraw" onclick="withdrawer(withdrawForm.draw.value)">
@@ -51,8 +60,9 @@
         CURRENT: <span id="withdraw1"></span>
         <br>
         NEW: <span id="withdraw2"></span>
+        </div>
     </form>
-
+</div>
     <script src="js/app.js"></script>
 </body>
 

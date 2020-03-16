@@ -1,5 +1,35 @@
+body {
+    background-color:#B6B6B6
+}
+
+.atm-style {
+    width:200px;
+    font-size: 70px;
+    color: #005BFF;
+    background-color: #FFF;
+    margin:0 auto;
+    text-align:center;
+    margin-bottom:30px;
+    border:10px solid #888;
+}
+#box {
+    width:500px;
+    text-align:center;
+    margin-top:10%;
+    margin-bottom:30%;
+    margin:0 auto;
+    padding-top:40px;
+    padding-bottom:30px;
+    border:20px solid #000;
+    border-radius:3px;
+    background-image: radial-gradient(#005BFF, #5C96FF);
+  }
+.welcome {
+    color:#FFF700;
+}
+
 #pinStart {
-    color:black;
+    color:#000;
 }
 
 #home {
